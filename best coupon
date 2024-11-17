@@ -1,0 +1,5 @@
+x = int(input())
+dp1 = x - (0.1*x)
+dp2 = x - 100
+price = min(dp1,dp2)
+print(int(price))
