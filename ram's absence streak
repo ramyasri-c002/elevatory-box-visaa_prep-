@@ -1,0 +1,13 @@
+n = int(input())
+attendance = list(map(int,input().split()))
+max_absent = 0
+curr_absent = 0
+for day in attendance:
+    if day == 0:
+        curr_absent += 1
+    else:
+        max_absent = max(max_absent,curr_absent)
+        curr_absent = 0
+max_absent = max(max_absent, curr_absent)
+print(max_absent)
+        
